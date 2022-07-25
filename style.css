@@ -1,1 +1,41 @@
+.block-link {
+    background-color: #9400d3;
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    border: none;
 
+}
+
+.block {
+    flex-direction: column;
+    margin-left: 512px;
+}
+
+.row {
+    margin-left: 120px;
+    margin-bottom: 20px;
+}
+
+.row1 {
+    display: flex;
+    margin-left: 70px;
+    margin-bottom: 20px;
+}
+
+.row2 {
+    display: flex;
+}
+
+.left {
+    margin-left: 20px;
+}
+
+.right {
+    margin-right: 20px;
+}
+
+.left2 {
+    position: relative;
+    right: 20px;
+}
