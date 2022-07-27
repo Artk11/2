@@ -132,6 +132,10 @@ table {
     border-spacing: 0;
 }
 
+.container {
+    max-height: 700px;
+}
+
 .block-link {
     background-color: #9400d3;
     width: 100px;
