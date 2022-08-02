@@ -137,7 +137,7 @@ table {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    min-height: 100vh;
 }
 
 .block-link {
@@ -163,10 +163,6 @@ table {
     display: flex;
 }
 
-.block-line1 {
-    display: flex;
-}
-
 .row {
     display: flex;
     margin-bottom: 20px;
@@ -185,6 +181,11 @@ table {
     flex-direction: column;
 }
 
+.block-line1 {
+    transform: translateX(500px);
+    transition: ease;
+}
+
 .left3 {
     margin-left: 130px;
 }
@@ -200,6 +201,11 @@ table {
 .square-margin-left {
     margin-left: 20px;
 }
+
+.square-no-margin-left2 {
+    margin-left: -20px;
+}
+
 
 .right {
     margin-right: 20px;
