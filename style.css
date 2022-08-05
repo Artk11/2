@@ -107,6 +107,7 @@ html {
 
 body {
     line-height: 1;
+    background-color: #1e1e1e;
 }
 
 ol,
@@ -226,27 +227,22 @@ table {
 @keyframes animation {
     0% {
         right: 0px;
-        top: 0px;
     }
 
     25% {
-        right: 600px;
-        top: 0px;
+        right: 0px;
     }
 
     50% {
         right: 600px;
-        top: 0px;
     }
 
     75% {
         right: 600px;
-        top: 0px;
     }
 
     100% {
-        right: 600px;
-        top: 0px;
+        right: 0px;
     }
 }
 
@@ -254,33 +250,29 @@ table {
     position: relative;
     background-color: auto;
     animation-name: animation;
-    animation-duration: 4s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite
 }
 
 @keyframes animation2 {
     0% {
         left: 0px;
-        top: 0px;
     }
 
     25% {
-        left: 600px;
-        top: 0px;
+        left: 0px;
     }
 
     50% {
-        left: 600px;
-        top: 0px;
+        left: 584px;
     }
 
     75% {
-        left: 600px;
-        top: 0px;
+        left: 584px;
     }
 
     100% {
-        left: 600px;
-        top: 0px;
+        left: 0px;
     }
 }
 
@@ -288,33 +280,29 @@ table {
     position: relative;
     background-color: auto;
     animation-name: animation2;
-    animation-duration: 4s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite
 }
 
 @keyframes animation3 {
     0% {
-        left: 0px;
         top: 0px;
     }
 
     25% {
-        left: 0px;
-        top: 320px;
+        top: 0px;
     }
 
     50% {
-        left: 0px;
         top: 320px;
     }
 
     75% {
-        left: 0px;
         top: 320px;
     }
 
     100% {
-        left: 0px;
-        top: 320px;
+        top: 0px;
     }
 }
 
@@ -322,7 +310,8 @@ table {
     position: relative;
     background-color: auto;
     animation-name: animation3;
-    animation-duration: 4s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite
 }
 
 @keyframes animation4 {
@@ -331,7 +320,7 @@ table {
     }
 
     25% {
-        bottom: 400px;
+        bottom: 0px;
     }
 
     50% {
@@ -343,7 +332,7 @@ table {
     }
 
     100% {
-        bottom: 400px;
+        bottom: 0px;
     }
 }
 
@@ -351,5 +340,6 @@ table {
     position: relative;
     background-color: auto;
     animation-name: animation4;
-    animation-duration: 4s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite
 }
