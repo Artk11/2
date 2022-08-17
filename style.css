@@ -152,7 +152,7 @@ table {
 
 .end {
     position: relative;
-    right: 100px;
+    right: 99px;
 }
 
 .start {
@@ -223,26 +223,141 @@ table {
 .bottom {
     margin-bottom: 20px;
 }
-
-@keyframes animation {
+@keyframes onetext {
     0% {
-        right: 0px;
+        visibility: hidden;
     }
-
-    25% {
-        right: 0px;
+    1% {
+        color: #1e1e1e;
     }
-
     50% {
-        right: 600px;
+        visibility: hidden;
+    }
+    65% {
+        visibility: visible;
     }
 
     75% {
-        right: 600px;
+        visibility: visible;
+    }
+    92% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+.onetext {
+    color: white;
+    font-size: 68px;
+    font-family: Arial;
+    position: relative;
+    animation-name: onetext;
+    left: 480px;
+    animation-duration: 8.5s;
+    animation-fill-mode: forwards;
+    white-space: nowrap;
+}
+@keyframes twotext {
+    0% {
+        visibility: hidden;
     }
 
+    20% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    62% {
+        visibility: visible;
+    }
+
+    75% {
+        visibility: visible;
+    }
+    92% {
+        visibility: hidden;
+    }
     100% {
-        right: 0px;
+        visibility: hidden;
+    }
+}
+.twotext {
+    color: white;
+    font-size: 68px;
+    font-family: Arial;
+    position: relative;
+    right: 480px;
+    animation-duration: 8.5s;
+    animation-name: twotext;
+    animation-fill-mode: forwards;
+    white-space: nowrap;
+    
+}
+.section{
+    margin: 0 auto;
+}
+.wrapper{
+    width:450px;
+    height:450px;
+    margin: 0 auto;
+}
+.wrapper .cell{
+    border: 1px solid rgb(170, 163, 163);
+    cursor: pointer;
+    float: left;
+    font-size: 100px;
+    height: 148px;
+    text-align: center;
+    width: 148px;
+}
+.cell {
+    color: rgba(214, 21, 21, 0.993);
+    font-size: 68px;
+    font-family: Arial;
+}
+@keyframes crosses-zeroes {
+    0% {
+        visibility: hidden;
+    }
+    10% {
+        visibility: hidden;
+    }
+    90% {
+        visibility: visible;
+    }
+    
+    100% {
+        visibility: visible;
+    }
+}
+.wrapper .cell{
+    animation-name: crosses-zeroes;
+    animation-duration: 90s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animation {
+    0% {
+        left: 0px;
+    }
+    25% {
+        left: 0px;
+    }
+    50% {
+        left: 600px;
+    }
+
+    75% {
+        left: 600px;
+    }
+    90% {
+       left: 600px;
+    }
+    
+    100% {
+        left: 1600px;
     }
 }
 
@@ -250,29 +365,50 @@ table {
     position: relative;
     background-color: auto;
     animation-name: animation;
-    animation-duration: 5s;
-    animation-iteration-count: infinite
+    animation-duration: 8.5s;
+    animation-fill-mode: forwards;
+    
 }
-
+@keyframes crosses-zeroes {
+    0% {
+        visibility: hidden;
+    }
+    10% {
+        visibility: hidden;
+    }
+    90% {
+        visibility: visible;
+    }
+    
+    100% {
+        visibility: visible;
+    }
+}
+.wrapper .cell{
+    animation-name: crosses-zeroes;
+    animation-duration: 90s;
+    animation-fill-mode: forwards;
+}
 @keyframes animation2 {
     0% {
-        left: 0px;
+        right: 0px;
     }
-
     25% {
-        left: 0px;
+        right: 0px;
     }
-
     50% {
-        left: 584px;
+        right: 450px;
     }
 
     75% {
-        left: 584px;
+        right: 450px;
     }
-
+    90% {
+       right: 450px;
+    }
+    
     100% {
-        left: 0px;
+        right: 1600px;
     }
 }
 
@@ -280,11 +416,15 @@ table {
     position: relative;
     background-color: auto;
     animation-name: animation2;
-    animation-duration: 5s;
-    animation-iteration-count: infinite
+    animation-duration: 8.5s;
+    animation-fill-mode: forwards;
+    
 }
 
 @keyframes animation3 {
+    100% {
+        top: 0px;
+    }
     0% {
         top: 0px;
     }
@@ -294,15 +434,16 @@ table {
     }
 
     50% {
-        top: 320px;
+        top: 1000px;
     }
 
     75% {
-        top: 320px;
+        top: 1000px;
     }
 
     100% {
-        top: 0px;
+        top: 1000px;
+        
     }
 }
 
@@ -310,36 +451,37 @@ table {
     position: relative;
     background-color: auto;
     animation-name: animation3;
-    animation-duration: 5s;
-    animation-iteration-count: infinite
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes animation4 {
     0% {
-        bottom: 0px;
+        top: 0px;
     }
 
     25% {
-        bottom: 0px;
+        top: 0px;
     }
 
     50% {
-        bottom: 400px;
+        top: 1000px;
     }
 
     75% {
-        bottom: 400px;
+        top: 1000px;
     }
 
     100% {
-        bottom: 0px;
+        top: 1000px;
     }
+    
 }
 
 .block-link2 {
     position: relative;
     background-color: auto;
     animation-name: animation4;
-    animation-duration: 5s;
-    animation-iteration-count: infinite
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
 }
