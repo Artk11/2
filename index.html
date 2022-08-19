@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+!DOCTYPE HTML>
 <html lang="ru">
 
 <head>
@@ -11,22 +11,12 @@
 
 <body>
     <div class="container">
-        <p class="onetext">A r t e my</p>
-        <section>
-            <div class="wrapper">
-                <div class="cell" id="1">x</div>
-                <div class="cell" id="2">x</div>
-                <div class="cell" id="3">x</div>
-         
-                <div class="cell" id="4">x</div>
-                <div class="cell" id="5">x</div>
-                <div class="cell" id="6">x</div>
-         
-                <div class="cell" id="7">x</div>
-                <div class="cell" id="8">x</div>
-                <div class="cell" id="9">x</div>
+        <div class="box">
+            <div class="box-inner">
+               <p class="onetext">Artemy</p>
+            </p>
             </div>
-        </section>
+        </div>
         <div class="block2 start">
             <div class="block-container2">
                 <div class="block-line1">
@@ -73,6 +63,26 @@
                         </div>
                     </div>
                 </div>
+                <div class="menu">
+                <button id="example_4" class="mainmenu" onclick="(document.getElementById('example_1').style.display='none')(document.getElementById('example_2').style.display='block')(document.getElementById('example_4').style.display='none')" type="button">Главное меню</button>
+                <section id="example_1" style="display:none;">
+                    <div class="wrapper">
+                        <div class="cell" id="1"><div class="cross">x</div><div class="zero" >0</div></div>
+                        <div class="cell" id="2"><div class="cross">x</div><div class="zero" >0</div></div>
+                        <div class="cell" id="3"><div class="cross">x</div><div class="zero" >0</div></div>
+                        
+                        <div class="cell" id="4"><div class="cross">x</div><div class="zero" >0</div></div>
+                        <div class="cell" id="5"><div class="cross">x</div><div class="zero" >0</div></div>
+                        <div class="cell" id="6"><div class="cross">x</div><div class="zero" >0</div></div>
+                        
+                        <div class="cell" id="7"><div class="cross">x</div><div class="zero" >0</div></div>
+                        <div class="cell" id="8"><div class="cross">x</div><div class="zero" ">0</div></div>
+                        <div class="cell" id="9"><div class="cross">x</div><div class="zero" >0</div></div>
+                    </div>
+                </section>
+                <button id="example_2" class="game" type="button" onclick="(document.getElementById('example_4').style.display='block')(document.getElementById('example_1').style.display='block')(document.getElementById('example_2').style.display='none')">Запустить игру</button>
+                <button id="example_3" class="reload" type="button" onClick="refreshPage()">Запустить Анимацию</button>
+               </div>
                 <div class="block-link2">
                     <div class="row left3">
                         <div class="square">
@@ -127,3 +137,4 @@
 </body>
 
 </html>
+
