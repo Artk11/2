@@ -317,25 +317,66 @@ table {
     font-size: 68px;
     font-family: Arial;
 }
-@keyframes crosses-zeroes {
-    0% {
-        visibility: hidden;
-    }
-    10% {
-        visibility: hidden;
-    }
-    90% {
-        visibility: visible;
-    }
-    
-    100% {
-        visibility: visible;
-    }
+.cross {
+    display: none;
 }
-.wrapper .cell{
-    animation-name: crosses-zeroes;
-    animation-duration: 90s;
-    animation-fill-mode: forwards;
+.zero {
+    display: none;
+}
+.box {
+    perspective: 1000px;
+}
+.box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+.box:hover .box-inner {
+    transform: rotateY(180deg);
+}
+.box-front, .box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.box-front {
+    color: white;
+    margin-right: 10px;
+}
+.box-back {
+    color: #1e1e1e;
+    transform: rotateY(180deg);
+} 
+.reload {
+    position: relative;
+    right: 400px;
+    bottom: 250px;
+}
+.game {
+    position: relative;
+    left: 595px;
+    bottom: 250px;
+}
+.mainmenu {
+    position: relative;
+    left: 150px;
+    bottom: 150px;
+    display: none;
+}
+
+.game {
+   animation-name: crosses-zeroes;
+   animation-duration: 90s;
+   animation-fill-mode: forwards;
+}
+.reload {
+   animation-name: crosses-zeroes;
+   animation-duration: 90s;
+   animation-fill-mode: forwards;
 }
 
 @keyframes animation {
@@ -346,14 +387,14 @@ table {
         left: 0px;
     }
     50% {
-        left: 600px;
+        left: 640px;
     }
 
     75% {
-        left: 600px;
+        left: 640px;
     }
     90% {
-       left: 600px;
+       left: 640px;
     }
     
     100% {
@@ -372,9 +413,11 @@ table {
 @keyframes crosses-zeroes {
     0% {
         visibility: hidden;
+        
     }
     10% {
         visibility: hidden;
+        
     }
     90% {
         visibility: visible;
@@ -384,11 +427,6 @@ table {
         visibility: visible;
     }
 }
-.wrapper .cell{
-    animation-name: crosses-zeroes;
-    animation-duration: 90s;
-    animation-fill-mode: forwards;
-}
 @keyframes animation2 {
     0% {
         right: 0px;
@@ -397,14 +435,14 @@ table {
         right: 0px;
     }
     50% {
-        right: 450px;
+        right: 425px;
     }
 
     75% {
-        right: 450px;
+        right: 425px;
     }
     90% {
-       right: 450px;
+       right: 425px;
     }
     
     100% {
@@ -423,26 +461,26 @@ table {
 
 @keyframes animation3 {
     100% {
-        top: 0px;
+        bottom: 0px;
     }
     0% {
-        top: 0px;
+        bottom: 0px;
     }
 
     25% {
-        top: 0px;
+        bottom: 0px;
     }
 
     50% {
-        top: 1000px;
+        bottom:  1000px;
     }
 
     75% {
-        top: 1000px;
+        bottom: 1000px;
     }
 
     100% {
-        top: 1000px;
+        bottom: 1000px;
         
     }
 }
