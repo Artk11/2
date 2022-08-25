@@ -1,0 +1,715 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+    <title>Сайт</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="box-inner">
+               <p class="onetext">A r t e m y</p>
+            </p>
+            </div>
+        </div>
+        <div class="block2 start">
+            <div class="block-container2">
+                <div class="block-line1">
+                    <div class="row">
+                        <div class="vertical right">
+                            <div class="block-link"></div>
+                            <div class="block-link top bottom"></div>
+                            <div class="block-link"></div>
+                        </div>
+                        <div class="vertical top2 right">
+                            <div class="block-link bottom"></div>
+                            <div class="block-link"></div>
+                        </div>
+                        <div class="block-link top3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block-container">
+                <div class="block-link1">
+                    <div class="row2 right3">
+                        <div class="square">
+                            <div class="block-link square-no-margin-left"></div>
+                        </div>
+                        <div class="square">
+                            <div class="block-link"></div>
+                        </div>
+                        <div class="square">
+                            <div class="block-link"></div>
+                        </div>
+                    </div>
+                    <div class="row1 top left4">
+                        <div class="square">
+                            <div class="block-link square-no-margin-left"></div>
+                        </div>
+                        <div class="square">
+                            <div class="block-link"></div>
+                        </div>
+                    </div>
+                    <div class="row left3">
+                        <div class="square">
+                            <div class="block-link square-no-margin-left"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                <button id="example_4" class="mainmenu" onclick="mainmenu()">Главное меню</button>
+                <section id="example_1" style="display:none;">
+                    <div class="wrapper">
+                        <div id="1_1">
+                        <div data-cell-row="0" data-cell-col="0" class="cell" id="1"><div class="cross">x</div><div class="zero" >0</div></div>
+                        <div data-cell-row="0" data-cell-col="1" class="cell" id="2"><div class="cross">x</div><div class="zero" >0</div></div>
+                        <div data-cell-row="0" data-cell-col="2" class="cell" id="3"><div class="cross">x</div><div class="zero" >0</div></div>
+                        </div>
+                        <div id="2_2">
+                        <div data-cell-row="1" data-cell-col="0" class="cell" id="4"><div class="cross">x</div><div class="zero" >0</div></div>
+                        <div data-cell-row="1" data-cell-col="1" class="cell" id="5"><div class="cross">x</div><div class="zero" >0</div></div>
+                        <div data-cell-row="1" data-cell-col="2" class="cell" id="6"><div class="cross">x</div><div class="zero" >0</div></div>
+                        </div>
+                        <div id="3_3">
+                        <div data-cell-row="2" data-cell-col="0" class="cell" id="7"><div class="cross">x</div><div class="zero" >0</div></div>
+                        <div data-cell-row="2" data-cell-col="1" class="cell" id="8"><div class="cross">x</div><div class="zero" ">0</div></div>
+                        <div data-cell-row="2" data-cell-col="2" class="cell" id="9"><div class="cross">x</div><div class="zero" >0</div></div>
+                        </div>
+                    </div>
+                </section>
+                <button id="example_2" class="game" type="button" onclick="StartTheGame()">Запустить игру</button>
+                <button id="example_3" class="reload" type="button" onClick="refreshPage()">
+                    Запустить Анимацию
+                </button>
+                </div>
+                <div class="block-link2">
+                    <div class="row left3">
+                        <div class="square">
+                            <div class="block-link square-no-margin-left"></div>
+                        </div>
+                    </div>
+                    <div class="row1 left4">
+                        <div class="square">
+                            <div class="block-link square-no-margin-left"></div>
+                        </div>
+                        <div class="square">
+                            <div class="block-link"></div>
+                        </div>
+                    </div>
+                    <div class="row2 right3">
+                        <div class="square">
+                            <div class="block-link square-no-margin-left"></div>
+                        </div>
+                        <div class="square">
+                            <div class="block-link"></div>
+                        </div>
+                        <div class="square">
+                            <div class="block-link"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block3 end">
+            <div class="block-container3">
+                <div class="block-line2">
+                    <div class="row">
+                        <div class="vertical right">
+                            <div class="block-link top3"></div>
+                        </div>
+                        <div class="vertical top2 right">
+                            <div class="block-link bottom"></div>
+                            <div class="block-link"></div>
+                        </div>
+                        <div class="vertical">
+                            <div class="block-link"></div>
+                            <div class="block-link top bottom"></div>
+                            <div class="block-link"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="twotext">K o r o l e n k o</p>
+    </div>
+</body>
+
+</html>
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+    background-color: #1e1e1e;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.container {
+    max-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.block-link {
+    background-color: #9400d3;
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    border: none;
+
+}
+
+.end {
+    position: relative;
+    right: 99px;
+}
+
+.start {
+    position: relative;
+    left: 119px;
+}
+
+.block-container2 {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.row1 {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.vertically1 {
+    flex-direction: column;
+}
+
+.vertically2 {
+    flex-direction: column;
+}
+
+.left3 {
+    margin-left: 130px;
+}
+
+.left4 {
+    margin-left: 70px;
+}
+
+.row2 {
+    display: flex;
+}
+
+.square {
+    margin-left: 20px;
+}
+
+.square-no-margin-left {
+    margin-left: -20px;
+}
+
+
+.right {
+    margin-right: 20px;
+}
+
+.top {
+    margin-top: 20px;
+}
+
+.top2 {
+    margin-top: 70px;
+}
+
+.top3 {
+    margin-top: 120px;
+}
+
+
+.bottom {
+    margin-bottom: 20px;
+}
+@keyframes onetext {
+    0% {
+        visibility: hidden;
+    }
+    20% {
+        visibility: hidden;
+    }
+    50% {
+        
+        visibility: visible;
+    }
+    51% {
+        opacity: 10%;
+    }
+    54% {
+       opacity: 100%;
+    }
+
+    65% {
+        visibility: visible;
+    }
+    80% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+.onetext {
+    color: white;
+    font-size: 68px;
+    font-family: Arial;
+    position: relative;
+    animation-name: onetext;
+    left: 450px;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    white-space: nowrap;
+}
+@keyframes twotext {
+    0% {
+        visibility: hidden;
+    }
+    20% {
+        visibility: hidden;
+    }
+    50% {
+        
+        visibility: visible;
+    }
+    51% {
+        opacity: 10%;
+    }
+    54% {
+       opacity: 100%;
+    }
+
+    65% {
+        visibility: visible;
+    }
+    80% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+.twotext {
+    color: white;
+    font-size: 68px;
+    font-family: Arial;
+    position: relative;
+    right: 425px;
+    animation-duration: 8s;
+    animation-name: twotext;
+    animation-fill-mode: forwards;
+    white-space: nowrap;
+    
+}
+.section{
+    margin: 0 auto;
+}
+.wrapper{
+    width:450px;
+    height:450px;
+    margin: 0 auto;
+}
+.wrapper .cell{
+    border: 1px solid rgb(170, 163, 163);
+    cursor: pointer;
+    float: left;
+    font-size: 100px;
+    height: 148px;
+    text-align: center;
+    width: 148px;
+}
+.cell {
+    color: white;
+}
+.cross {
+   display: none;
+   font-family: arial
+}
+.zero {
+   display: none;
+   font-family: arial;
+}
+.box {
+    perspective: 1000px;
+}
+.box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+.box:hover .box-inner {
+    transform: rotateY(180deg);
+}
+.box-front, .box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.box-front {
+    color: white;
+    margin-right: 10px;
+}
+.box-back {
+    color: #1e1e1e;
+    transform: rotateY(180deg);
+} 
+.reload {
+    transform: translate(-400px, -247px);
+    width: 150px;
+    height: 50px;
+    background-color: #9400d3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.game {
+    transform: translate(400px, -247px);
+    width: 150px;
+    height: 50px;
+    background-color: #9400d3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.mainmenu {
+    background-color: #9400d3;
+    color: white;
+    border-radius: 6px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    transform: translate(155px, -100px);
+    display: none;
+    cursor: pointer;
+}
+
+.game {
+   animation-name: crosses-zeroes;
+   animation-duration: 90s;
+   animation-fill-mode: forwards;
+}
+.reload {
+   animation-name: crosses-zeroes;
+   animation-duration: 90s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes animation {
+    0% {
+        left: 0px;
+    }
+    10% {
+        left: 0px;
+    }
+    30% {
+        left: 590px;
+    }
+
+    75% {
+        left: 590px;
+    }
+    90% {
+       left: 590px;
+    }
+    
+    100% {
+        left: 1600px;
+    }
+}
+
+.block-line2 {
+    position: relative;
+    background-color: auto;
+    animation-name: animation;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+}
+@keyframes crosses-zeroes {
+    0% {
+        visibility: hidden;
+        
+    }
+    10% {
+        visibility: hidden;
+        
+    }
+    90% {
+        visibility: visible;
+    }
+    
+    100% {
+        visibility: visible;
+    }
+}
+@keyframes animation2 {
+    0% {
+        right: 0px;
+    }
+    10% {
+        right: 0px;
+    }
+    30% {
+        right: 470px;
+    }
+
+    75% {
+        right: 470px;
+    }
+    90% {
+       right: 470px;
+    }
+    
+    100% {
+        right: 1600px;
+    }
+}
+
+.block-line1 {
+    position: relative;
+    background-color: auto;
+    animation-name: animation2;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes animation3 {
+    0% {
+        bottom: 0px;
+    }
+
+    25% {
+        bottom: 0px;
+    }
+
+    50% {
+        bottom:  0px;
+    }
+
+    90% {
+        bottom: 1000px;
+    }
+
+    100% {
+        bottom: 1000px;
+    }
+}
+
+.block-link1 {
+    position: relative;
+    background-color: auto;
+    animation-name: animation3;
+    animation-duration: 12.5s;
+    animation-timing-function: cubic-bezier(0, 0, 0, 1.50);
+    animation-fill-mode: forwards;
+}
+
+@keyframes animation4 {
+    0% {
+        top: 0px;
+    }
+
+    25% {
+        top: 0px;
+    }
+
+    50% {
+        top: 0px;
+    }
+
+    90% {
+        top: 1000px;
+    }
+
+    100% {
+        top: 1000px;
+    }
+    
+}
+
+.block-link2 {
+    position: relative;
+    background-color: auto;
+    animation-name: animation4;
+    animation-duration: 12.5s;
+    animation-timing-function: cubic-bezier(0, 0, 0, 1.50);
+    animation-fill-mode: forwards;
+    margin-top: -40px;
+}
+
+let cell = document.querySelector("cell");
+  button.addEventListener("click", function() {
+    console.log("Clicked cell: X");
+});
+function refreshPage(){
+  window.location.reload();
+};
+function StartTheGame() {
+  document.getElementById('example_4').style.display='block';
+  document.getElementById('example_1').style.display='block';
+  document.getElementById('example_3').style.display='none';
+  document.getElementById('example_2').style.display='none';
+}
+function mainmenu() {
+document.getElementById('example_3').style.display='block'
+document.getElementById('example_2').style.display='block'
+document.getElementById('example_1').style.display='none'
+document.getElementById('example_4').style.display='none'
+}
+let activeplayer = "cross";
+
+
+let field = [ [null, null, null], [null, null, null], [null, null, null] ];
