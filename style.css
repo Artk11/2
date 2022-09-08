@@ -225,30 +225,13 @@ table {
 }
 @keyframes onetext {
     0% {
-        visibility: hidden;
-    }
-    20% {
-        visibility: hidden;
+        opacity: 0;
     }
     50% {
-        
-        visibility: visible;
-    }
-    51% {
-        opacity: 10%;
-    }
-    54% {
-       opacity: 100%;
-    }
-
-    65% {
-        visibility: visible;
-    }
-    80% {
-        visibility: hidden;
+        opacity: 1;
     }
     100% {
-        visibility: hidden;
+        opacity: 0;
     }
 }
 .onetext {
@@ -256,38 +239,23 @@ table {
     font-size: 68px;
     font-family: Arial;
     position: relative;
-    animation-name: onetext;
     left: 450px;
-    animation-duration: 8s;
+    animation-duration: 6s;
+    animation-delay: 1.5s;
+    opacity: 0;
+    animation-name: onetext;
     animation-fill-mode: forwards;
     white-space: nowrap;
 }
 @keyframes twotext {
     0% {
-        visibility: hidden;
-    }
-    20% {
-        visibility: hidden;
+        opacity: 0;
     }
     50% {
-        
-        visibility: visible;
-    }
-    51% {
-        opacity: 10%;
-    }
-    54% {
-       opacity: 100%;
-    }
-
-    65% {
-        visibility: visible;
-    }
-    80% {
-        visibility: hidden;
+        opacity: 1;
     }
     100% {
-        visibility: hidden;
+        opacity: 0;
     }
 }
 .twotext {
@@ -296,11 +264,12 @@ table {
     font-family: Arial;
     position: relative;
     right: 425px;
-    animation-duration: 8s;
+    animation-duration: 6s;
+    animation-delay: 1.5s;
+    opacity: 0;
     animation-name: twotext;
     animation-fill-mode: forwards;
     white-space: nowrap;
-    
 }
 .section{
     margin: 0 auto;
@@ -325,6 +294,10 @@ table {
 .cross {
    display: none;
    font-family: arial
+}
+cross-true {
+    display: block;
+    font-family: arial
 }
 .zero {
    display: none;
@@ -400,6 +373,23 @@ table {
    animation-duration: 90s;
    animation-fill-mode: forwards;
 }
+@keyframes crosses-zeroes {
+    0% {
+        visibility: hidden;
+        
+    }
+    10% {
+        visibility: hidden;
+        
+    }
+    90% {
+        visibility: visible;
+    }
+    
+    100% {
+        visibility: visible;
+    }
+}
 
 @keyframes animation {
     0% {
@@ -430,23 +420,6 @@ table {
     animation-name: animation;
     animation-duration: 7s;
     animation-fill-mode: forwards;
-}
-@keyframes crosses-zeroes {
-    0% {
-        visibility: hidden;
-        
-    }
-    10% {
-        visibility: hidden;
-        
-    }
-    90% {
-        visibility: visible;
-    }
-    
-    100% {
-        visibility: visible;
-    }
 }
 @keyframes animation2 {
     0% {
